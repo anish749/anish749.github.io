@@ -6,6 +6,7 @@ categories: spark
 ---
 
 A module written in Scala for Apache Spark v2.0.0 to batch process mapping of Geo Locations in two skewed data sets.
+Link to code: https://github.com/anish749/geo-search-spark
 
 ## Introduction
 Apache Spark application written in Scala to map given latitude longitude values to nearest latitude longitude values in a given set using functional programming simulating a map side join of two data sets.
