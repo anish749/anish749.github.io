@@ -1,1 +1,1 @@
-A GitHub Pages website where (will) write about technology and coding in general.
+A GitHub Pages website where I (will) write about technology and coding in general.
