@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "SQL Analytical Functions - I"
+title:  "SQL Analytical Functions - I - Overview, PARTITION BY and ORDER BY"
 date:   2017-04-27 21:08:49 +0530
 categories: sql
 ---
@@ -61,14 +61,14 @@ For our example, we need to find average for each subject, which means we can pa
 Lets try the query
 ```sql
 SELECT id, name, subject, marks,
-       AVG(marks) OVER(PARTITION BY subject) AS avg_subject_marks
+       AVG(marks) OVER (PARTITION BY subject) AS avg_subject_marks
 FROM marks
 ```
 The above query applies the AVG of marks after partitioning the data by subject. So average is calculated for each subject, and is returned as a column.
 Our initial problem to find the difference of each student from subject average is now simple and can be expressed as follows:
 ```sql
 SELECT id, name, subject, marks,
-       ABS(marks - AVG(marks) OVER(PARTITION BY subject)) AS mean_subject_diff
+       ABS(marks - AVG(marks) OVER (PARTITION BY subject)) AS mean_subject_diff
 FROM marks
 ```
 
@@ -99,7 +99,7 @@ The query looks like
 
 ```sql
 SELECT id, name, subject, marks,
-       RANK() OVER(PARTITION BY subject ORDER BY marks DESC) AS subject_rank
+       RANK() OVER (PARTITION BY subject ORDER BY marks DESC) AS subject_rank
 FROM marks
 ```
 This query is pretty readable and self explanatory. It says to partition the data first and then order it descending based on marks, and finally put a rank for each record.
