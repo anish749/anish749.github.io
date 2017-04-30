@@ -29,7 +29,7 @@ This query first orders the data based on date, and then selects the window fram
 
 ROWS or RANGE requires that the ORDER BY clause be specified. 
 
-Practice problem https://www.hackerearth.com/problem/sql/calculate-moving-average/
+Practice problem [Calculate Moving Average on HackerEarth](https://www.hackerearth.com/problem/sql/calculate-moving-average/)
 
 ### Using PARTITION BY, ORDER BY and ROWS/RANGE together
 Consider the above example but lets say now the data set contains data for multiple cities. Now the precipitation for each city would be different and the sum would also have to be calculated differently. Here we have the data set as "city, date, precipitation". We would patition the data by city in the Over clause.
