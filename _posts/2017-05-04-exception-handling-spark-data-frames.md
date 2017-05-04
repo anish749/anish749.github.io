@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Exception handling in Spark Data Frames"
+title:  "Exception Handling in Spark Data Frames"
 date:   2017-05-04 21:08:49 +0530
 categories: spark
 ---
@@ -51,15 +51,17 @@ If the number of exceptions that can occur are minimal compared to success cases
 #### Using Collection Accumulator
 
 **Spark Accumulators**
-Spark provides accumulators which can be used as counters or to accumulate values across executors. Accumulators have a few drawbacks and hence we should be very careful while using it.
- - The accumulators is stored local in all executors, and can be updated from executors. However executors cannot read from accumulators.
- - Only drivers can read accumulators.
- - The accumulators are updated once a task complestes ???
- - If an accumulator is used in a transformation in Spark, then the values might not be reliable. If multiple actions use the transformed data frame, they would trigger multiple tasks (???) which would lead to multiple updates to the accumulator for the same task.
- - In cases of speculative execution ???
- - The values from different executors are brought to the driver and accumulated at the end ??? of the job. Thus there are no distributed locks on updating the value fo the accumulator.
- - ??? Add others
 
+Spark provides accumulators which can be used as counters or to accumulate values across executors. Accumulators have a few drawbacks and hence we should be very careful while using it.
+ - The accumulator is stored locally in all executors, and can be updated from executors.
+ - Only the driver can read from an accumulator.
+ - The accumulators are updated once a task completes successfully.
+ - If a stage fails, for a node getting lost, then it is updated more than once.
+ - If an accumulator is used in a transformation in Spark, then the values might not be reliable. If multiple actions use the transformed data frame, they would trigger multiple tasks (if it is not cached) which would lead to multiple updates to the accumulator for the same task.
+ - In cases of speculative execution, Spark might update more than once.
+ - The values from different executors are brought to the driver and accumulated at the end of the job. Thus there are no distributed locks on updating the value of the accumulator.
+ - If the data is huge, and doesn't fit in memory, then parts of might be recomputed when required, which might lead to multiple updates to the accumulator.
+ 
 Keeping the above properties in mind, we can still use Accumulators safely for our case considering that we immediately trigger an action after calling the accumulator. This prevents multiple updates.
 In Spark 2.1.0, we can have the following code, which would handle the exceptions and append them to our accumulator.
 We use Try - Success/Failure in the Scala way of handling exceptions. 
@@ -192,4 +194,5 @@ Would love to hear more ideas about improving on these.
  - http://danielwestheide.com/blog/2012/12/26/the-neophytes-guide-to-scala-part-6-error-handling-with-try.html
  - https://www.nicolaferraro.me/2016/02/18/exception-handling-in-apache-spark/
  - http://rcardin.github.io/big-data/apache-spark/scala/programming/2016/09/25/try-again-apache-spark.html
+ - http://stackoverflow.com/questions/29494452/when-are-accumulators-truly-reliable
 
