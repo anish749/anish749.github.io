@@ -1,8 +1,8 @@
 ---
-layout: post
 title:  "SQL Analytical Functions - I - Overview, PARTITION BY and ORDER BY"
 date:   2017-04-27 21:08:49 +0530
 categories: sql
+tags: sql analytics data-exploration analytical-functions
 ---
 
 For a long time I had faced a lot of problems while working with data bases and SQL where in order to get a better understanding of the available data, simple aggregations using group by and joins were not enough. For deep diving into data, advanced SQL features were necessarry.

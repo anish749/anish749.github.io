@@ -1,8 +1,8 @@
 ---
-layout: post
 title:  "Exception Handling in Spark Data Frames"
 date:   2017-05-04 21:08:49 +0530
 categories: spark
+tags: data-engineering spark scala data-frames data-errors
 ---
 
 ### General Exception Handling

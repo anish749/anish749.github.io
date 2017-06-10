@@ -1,8 +1,8 @@
 ---
-layout: post
 title:  "Using HashSet based indexes in Apache Spark"
 date:   2017-05-14 00:08:49 +0530
 categories: spark
+tags: spark scala join optimization indexes hashset
 ---
 
 This post is about de-duplication of data while loading to tables using HashSet based indexes in Apache Spark.

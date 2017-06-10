@@ -1,8 +1,8 @@
 ---
-layout: post
 title:  "Geo Location Batch Search in Spark"
 date:   2017-04-22 21:08:49 +0530
 categories: spark
+tags: spark mapreduce scala spacial join optimization
 ---
 
 A module written in Scala for Apache Spark v2.0.0 to batch process mapping of Geo Locations in two skewed data sets.

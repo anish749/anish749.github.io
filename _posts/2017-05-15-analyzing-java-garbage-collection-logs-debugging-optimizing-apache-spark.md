@@ -1,8 +1,9 @@
 ---
-layout: post
 title:  "Analyzing Java Garbage Collection Logs for debugging and optimizing Apache Spark jobs"
+excerpt: "Understanding how Spark runs on JVMs and how the memory is managed in each JVM."
 date:   2017-05-15 00:08:49 +0530
 categories: spark
+tags: spark scala aws s3 parquet java-gc
 ---
 
 Recently while trying to make peace between Apache Parquet, Apache Spark and Amazon S3, to write data from Spark jobs, we were running into recurring issues.
@@ -14,7 +15,7 @@ However the moment we started loading actual data, of approx 150 GB as a test, o
 
 ### What the error looked like
 One of the interesting errors was a java OutOfMemoryError with GC Overhead limit exceeded.
-```log
+```
 17/05/12 10:48:36 WARN NioEventLoop: Unexpected exception in the selector loop.
 java.lang.OutOfMemoryError: GC overhead limit exceeded
 ...
@@ -163,7 +164,7 @@ The dominator tree showing us the objects which are consuming the most space in 
 
 
 ### The problematic call stack
-```logs
+```
 main
   at org.apache.parquet.bytes.BytesUtils.intToBytes(I)[B (BytesUtils.java:221)
   at org.apache.parquet.column.statistics.IntStatistics.getMaxBytes()[B (IntStatistics.java:56)
