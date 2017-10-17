@@ -4,6 +4,7 @@ excerpt: "Finding the most common value in parallel across nodes, and having tha
 date:   2017-07-14 00:08:49 +0530
 categories: spark
 tags: spark scala udaf statistics functions
+comments: true
 ---
 
 In this post we would discuss how we can practically optimize the statistical function of Mode or the most common value(s) in Apache Spark by using UDAFs and the concept of monoid.

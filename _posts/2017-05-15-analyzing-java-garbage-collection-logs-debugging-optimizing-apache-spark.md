@@ -4,6 +4,7 @@ excerpt: "Understanding how Spark runs on JVMs and how the memory is managed in 
 date:   2017-05-15 00:08:49 +0530
 categories: spark
 tags: spark scala aws s3 parquet java-gc
+comments: true
 ---
 
 Recently while trying to make peace between Apache Parquet, Apache Spark and Amazon S3, to write data from Spark jobs, we were running into recurring issues.

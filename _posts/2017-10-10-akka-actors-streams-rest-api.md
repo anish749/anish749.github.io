@@ -4,6 +4,7 @@ excerpt: "A comparison of use cases for Spray IO (on Akka Actors) and Akka Http 
 date:   2017-10-10 00:08:49 +0530
 categories: scala
 tags: scala akka akka-actors akka-streams akka-http spray-io
+comments: true
 ---
 
 This post is about a comparison between Spray IO and Akka Http, and specifically one of the major changes in the way we design code when using actor based frameworks.
