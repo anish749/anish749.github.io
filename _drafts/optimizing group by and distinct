@@ -1,0 +1,38 @@
+
+Distinct in SQL, replacing it with Group By, and how it is exists in the Map Reduce paradigm of programming.
+
+
+Spark SQL Catalyst Optimizer:
+
+/**
+ * Replaces logical [[Distinct]] operator with an [[Aggregate]] operator.
+ * {{{
+ *   SELECT DISTINCT f1, f2 FROM t  ==>  SELECT f1, f2 FROM t GROUP BY f1, f2
+ * }}}
+ */
+object ReplaceDistinctWithAggregate extends Rule[LogicalPlan] {
+  def apply(plan: LogicalPlan): LogicalPlan = plan transform {
+    case Distinct(child) => Aggregate(child.output, child.output, child)
+  }
+}
+
+
+### Topics
+
+What is Distinct
+
+What is GroupBy
+
+How and when does the two produce the same output
+
+Coding these in imperative programming.
+
+The Map Reduce paradigm of programming.
+
+Coding the two in Map Reduce programming.
+
+Advantages and disadvantages
+
+Which is better
+
+
