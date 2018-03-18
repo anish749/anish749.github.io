@@ -5,10 +5,14 @@ permalink: /about/
 
 Hello, I am Anish.
 
-I am currently consulting for Philips Innovation Services, India as a Data Engineer, while working at Fractal Analytics.
-My current area of expertise is SQL and functional programming.
+I spend my day working as a Data Engineer.
+
+My current area of expertise is Data Processing, Big Data, SQL and Functional Programming.
 
 I started coding back in high school and have since maintained a deep interest in coding and now I engineer data products. 
+
+I also mentor others and provide help in solving problems in the world of Data.
+For online sessions I work through [CodeMentor](https://www.codementor.io/anish749)  [![Book session on Codementor](https://cdn.codementor.io/badges/book_session_github.svg)](https://www.codementor.io/anish749?utm_source=github&utm_medium=button&utm_term=anish749&utm_campaign=github)
 
 Other than coding I also maintain a deep interest in films and photography as a hobby. Do have a look at my other blog at [Visual Krafts](https://visualkrafts.wordpress.com/)
 
