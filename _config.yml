@@ -82,29 +82,29 @@ author:
   bio              : "Data Engineer"
   location         : "Stockholm, Sweden"
   email            : "anish749@gmail.com"
+  github           : "anish749"
+  linkedin         : "anishchakraborty/"
+  facebook         : "anish.chakraborty"
+  instagram        : "anishchakraborty/"
+  youtube          : "https://www.youtube.com/c/visualkrafts" # "https://youtube.com/c/MichaelRoseDesign"
+  twitter          : "photoganish"
+  stackoverflow    : "4982581/anish" # "123456/username" (the last part of your profile url, e.g. http://stackoverflow.com/users/123456/username)
   uri              :
   bitbucket        :
   codepen          :
   dribbble         :
   flickr           :
-  facebook         : "anish.chakraborty"
   foursquare       :
-  github           : "anish749"
   google_plus      :
   keybase          :
-  instagram        : "anishchakraborty/"
   lastfm           :
-  linkedin         : "anishchakraborty/"
   pinterest        :
   soundcloud       :
-  stackoverflow    : "4982581/anish" # "123456/username" (the last part of your profile url, e.g. http://stackoverflow.com/users/123456/username)
   steam            :
   tumblr           :
-  twitter          : "photoganish"
   vine             :
   weibo            :
   xing             :
-  youtube          : "https://www.youtube.com/c/visualkrafts" # "https://youtube.com/c/MichaelRoseDesign"
 
 
 # Reading Files
@@ -174,7 +174,7 @@ sass:
 permalink: /:categories/:title/
 paginate: 25 # amount of posts to show
 paginate_path: /page:num/
-timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Europe/Stockholm # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins
