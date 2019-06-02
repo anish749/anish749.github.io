@@ -1,18 +1,31 @@
 ---
-layout: default # might use splash
 title: "Preparing for Coding Interviews"
 permalink: /interview-prep/
-author_profile: false
 ---
 
-Interview preparations are hard.
-Practice makes you perfect.
-Get 1:1 help and mentoring when preparing for interviews.
+Interview preparations are hard. Software Engineering interviews require
+dedicated preparation and a lot practice to make sure you can meet
+expectations and beat the competition.
 
-Roles I can help you with.
+I have been through this journey myself and I can guide you on your
+journey.
 
-To get started email me here.
+Here is what I can do :
+ - Walk you through problems.
+ - Solve algorithmic problems while explaining approaches to you.
+ - Tell you what you are doing wrong and how to approach these problems.
 
-Reviews
+Languages that I know and I can help you in:
+ - Java
+ - Python
+ - Scala
+ - SQL
 
+Roles I can help you prepare for:
+ - Software Engineer (Backend)
+ - Software Engineer (Data)
+ - Data Analyst / Engineer
 
+My experiences and reviews are [here](https://www.codementor.io/anish749/reviews)
+
+Contact me [here](/contact)
