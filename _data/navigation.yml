@@ -4,18 +4,22 @@ main:
     url: /about/
   - title: "Blog Posts"
     url: /year-archive/
-  - title: "Categories"
-    url: /categories/
-  - title: "Tags"
-    url: /tags/
+  - title: "Interview Prep"
+    url: /interview-prep/
+  - title: "Consulting"
+    url: /on-demand-help/
   - title: "Contact"
     url: /contact/
-#  - title: "Pages"
-#    url: /page-archive/
-#  - title: "Collections"
-#    url: /collection-archive/
+  - title: "Categories"
+    url: /categories/
   - title: "Other Blogs"
     url: https://visualkrafts.wordpress.com/
+  - title: "Tags"
+    url: /tags/
+  # - title: "Pages"
+  #   url: /page-archive/
+  # - title: "Collections"
+  #   url: /collection-archive/
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
