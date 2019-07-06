@@ -20,3 +20,4 @@ data analysis and data science. I have also worked expensively with
 AWS and GCP products.
 
 Lets connect [here](/contact/) and discuss more about how I can help you.
+Click here for [subscriptions](/coding-help-subscription/).
