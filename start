@@ -15,4 +15,6 @@ set -o xtrace
 
 bundle install
 
+npm run build:js
+
 bundle exec jekyll serve --drafts

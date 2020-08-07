@@ -92,7 +92,7 @@ $(document).ready(function() {
       events: true // if true, emit custom events
     });
   }
-  
+
   // add lightbox class to all image links
   $(
     "a[href$='.jpg'],a[href$='.jpeg'],a[href$='.JPG'],a[href$='.png'],a[href$='.gif']"
@@ -133,3 +133,36 @@ $(document).ready(function() {
     midClick: true // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
   });
 });
+
+var stripe = Stripe('pk_test_wjXlHcChlCmxRD3t2Bvyf6xd');
+var DOMAIN = location.href.replace(/[^/]*$/, '');
+
+function handlePrepaid() {
+  handlePurchase('price_1HDCTuHn4ZvcwbHKmch7dkPh', 'payment')
+};
+
+function handlePayg() {
+  handlePurchase('price_1HDCX7Hn4ZvcwbHKIBZ3EG0f', 'subscription')
+};
+
+// Handle any errors from Checkout
+var handleResult = function (result) {
+  if (result.error) {
+    // If `redirectToCheckout` fails due to a browser or network
+    // error, display the localized error message to your customer.
+    var displayError = document.getElementById('error-message');
+    displayError.textContent = result.error.message;
+  }
+};
+
+function handlePurchase(priceId, mode) {
+  // Generic eventListener for calling Stripe checkout
+  console.log(priceId)
+  stripe.redirectToCheckout({
+    mode: mode,
+    lineItems: [{ price: priceId, quantity: 1 }],
+    successUrl: DOMAIN + 'success.html?session_id={CHECKOUT_SESSION_ID}',
+    cancelUrl: DOMAIN + 'canceled.html?session_id={CHECKOUT_SESSION_ID}',
+    })
+    .then(handleResult);
+};
