@@ -4,9 +4,17 @@ title: Contact Me
 permalink: /contact/
 ---
 
-My interests are building scalable systems, data driven applications,
-algorithms and coding. 
+Let's have a chat.
 
-If you think I can help you these get in touch via:
+Choose a time (in your timezone) to have a call:
+<!-- Calendly inline widget begin -->
+<div class="calendly-inline-widget" data-url="https://calendly.com/anish749/meet?hide_event_type_details=1" style="min-width:320px;height:630px;"></div>
+<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
+<!-- Calendly inline widget end -->
+
+
+# Contacts
   - [Email](mailto:anish749@gmail.com)
-  - Phone - ```+46 72 532 38 40```
+  - [Phone +46 72-532 38 40](tel:+46 725323840)
+  - [WhatsApp](https://wa.me/46725323840)
+  - [Zoom](https://us04web.zoom.us/j/5393122063?pwd=VUNEdkE0R0VxQisyVU9TZitQSU1QQT09)
