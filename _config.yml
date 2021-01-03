@@ -79,7 +79,7 @@ analytics:
 author:
   name             : "Anish Chakraborty"
   avatar           : "/assets/images/bio-photo.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Data Engineer"
+  bio              : "Software Engineer"
   location         : "Stockholm, Sweden"
   email            : "anish749@gmail.com"
   github           : "anish749"
