@@ -13,47 +13,19 @@ Choose a time (in your timezone) to have a call:
 <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
 <!-- Calendly inline widget end -->
 
-# Subscribe to a plan
-<script type="text/javascript" src="https://js.stripe.com/v3/"></script>
-<form id="signup-form">
-  <div class="signup-form-class">
-    <!-- <label
-      class="block text-gray-500 font-bold mb-2"
-      for="inline-full-name"
-    >
-      Email address
-    </label> -->
-    <input
-      class="appearance-none border-2 border-gray-200 rounded-md w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-pasha"
-      id="email"
-      type="text"
-      placeholder="Email address"
-      required
-    />
-  </div>
-
-  <button
-    id="email-submit"
-    class="w-full bg-pasha hover:bg-red-200 hover:shadow-outline rounded-md hover:text-pasha hover:border hover:border-black focus:shadow-outline text-white focus:bg-white focus:text-pasha font-light py-2 px-4 rounded"
-    type="submit">
-    <div id="loading" class="hidden">Signing up...</div>
-    <span id="button-text">Sign up</span>
-  </button>
-</form>
-        
-<!-- Code from feature row -->
+# Prepay for discounts
+If you intend to book multiple session, you can prepay for a discount.
 
 <div class="feature__wrapper">
- 
+
     <div class="feature__item">
       <div class="archive__item">
         <div class="archive__item-body">
-            <h2 class="archive__item-title">Prepaid</h2>
+            <h2 class="archive__item-title">2 hrs at 100 USD / hr</h2>
             <div class="archive__item-excerpt">
-              <p>Paid in advance, charged at 80 USD / 55 mins or equivalent</p>
+              <p>Book anytime, in the next 1 month</p>
             </div>
-            <p><a onclick="handlePrepaid()" class="btn btn--primary">Buy</a></p>
-            <div id="error-message"></div>
+            <p><a onclick="handlePrepaid1()" class="btn btn--primary">Buy</a></p>
         </div>
       </div>
     </div>
@@ -61,20 +33,32 @@ Choose a time (in your timezone) to have a call:
     <div class="feature__item">
       <div class="archive__item">
         <div class="archive__item-body">
-            <h2 class="archive__item-title">Pay-as-you-go</h2>
+            <h2 class="archive__item-title">5 hrs at 90 USD / hr</h2>
             <div class="archive__item-excerpt">
-              <p>Submit payment details to be charged later</p>
+              <p>Book anytime, in the next 3 months</p>
             </div>
-            
-            <p><a onclick="handlePayg()" class="btn btn--primary">Submit Payment Details</a></p>
+            <p><a onclick="handlePrepaid2()" class="btn btn--primary">Buy</a></p>
         </div>
       </div>
     </div>
-    
+
+    <div class="feature__item">
+      <div class="archive__item">
+        <div class="archive__item-body">
+            <h2 class="archive__item-title">10 hrs at 85 USD / hr</h2>
+            <div class="archive__item-excerpt">
+              <p>Book anytime, in the next 3 months</p>
+            </div>
+            <p><a onclick="handlePrepaid3()" class="btn btn--primary">Buy</a></p>
+        </div>
+      </div>
+    </div>
+
 </div>
 
 
-# Bookmark
-- [Zoom](https://zmurl.com/call-anish)
-- [Email](mailto:anish749@gmail.com)
-- [WhatsApp](https://wa.me/46725323840)
+# Contacts
+  - [Email](mailto:anish749@gmail.com)
+  - [Phone +46 72-532 38 40](tel:+46 725323840)
+  - [WhatsApp](https://wa.me/46725323840)
+  - [Zoom](https://us04web.zoom.us/j/5393122063?pwd=VUNEdkE0R0VxQisyVU9TZitQSU1QQT09)

@@ -137,12 +137,16 @@ $(document).ready(function() {
 var stripe = Stripe('pk_test_wjXlHcChlCmxRD3t2Bvyf6xd');
 var DOMAIN = location.href.replace(/[^/]*$/, '');
 
-function handlePrepaid() {
-  handlePurchase('price_1HDCTuHn4ZvcwbHKmch7dkPh', 'payment')
+function handlePrepaid1() {
+  handlePurchase( [{ price: 'price_1HDCTuHn4ZvcwbHKmch7dkPh', quantity: 2}] )
 };
 
-function handlePayg() {
-  handlePurchase('price_1HDCX7Hn4ZvcwbHKIBZ3EG0f', 'subscription')
+function handlePrepaid2() {
+  handlePurchase([{ price: 'price_1HDCTuHn4ZvcwbHKmch7dkPh', quantity: 5}] )
+};
+
+function handlePrepaid3() {
+  handlePurchase( [{ price: 'price_1HDCTuHn4ZvcwbHKmch7dkPh', quantity: 10}] )
 };
 
 // Handle any errors from Checkout
@@ -155,12 +159,11 @@ var handleResult = function (result) {
   }
 };
 
-function handlePurchase(priceId, mode) {
+function handlePurchase(items) {
   // Generic eventListener for calling Stripe checkout
-  console.log(priceId)
   stripe.redirectToCheckout({
-    mode: mode,
-    lineItems: [{ price: priceId, quantity: 1 }],
+    mode: 'payment',
+    lineItems: items,
     successUrl: DOMAIN + 'success.html?session_id={CHECKOUT_SESSION_ID}',
     cancelUrl: DOMAIN + 'canceled.html?session_id={CHECKOUT_SESSION_ID}',
     })
