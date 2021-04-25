@@ -16,6 +16,7 @@ Choose a time (in your timezone) to have a call:
 # Prepay for discounts
 If you intend to book multiple session, you can prepay for a discount.
 
+<script type="text/javascript" src="https://js.stripe.com/v3/"></script>
 <div class="feature__wrapper">
 
     <div class="feature__item">
