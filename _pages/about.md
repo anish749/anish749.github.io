@@ -11,7 +11,7 @@ My current area of expertise is Data Processing, Big Data, SQL and Functional Pr
 
 I started coding back in high school and have since maintained a deep interest in coding and now I engineer data products.
 
-I am currently working full time as a Data Engineer at Spotify AB, based out of Stockholm, Sweden.
+I am have previously worked as a Data & Backend Engineer at Spotify AB, and I'm currently based out of Stockholm, Sweden.
 
 I also mentor others and provide help in solving problems in the world of Data.
 For online sessions I work through [MentorCruise](https://mentorcruise.com/mentor/anishchakraborty/).

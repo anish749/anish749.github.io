@@ -7,12 +7,12 @@
 
 # Site Settings
 locale                   : "en"
-title                    : "Anish C"
+title                    : "Depth First Coding by Anish"
 title_separator          : "-"
 name                     : "Anish Chakraborty"
 description              : "Thoughts while working on software and data."
-url                      : https://anish749.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : # the subpath of your site, e.g. "/blog"
+url                      : https://www.depthfirstcoding.com # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : anish749/anish749.github.io # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
@@ -77,7 +77,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "Anish Chakraborty"
+  name             : "Anish C"
   avatar           : "/assets/images/bio-photo.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Software Engineer"
   location         : "Stockholm, Sweden"
@@ -86,8 +86,8 @@ author:
   linkedin         : "anishchakraborty/"
   facebook         : "anish.chakraborty"
   instagram        : "anishchakraborty/"
-  youtube          : "https://www.youtube.com/c/visualkrafts" # "https://youtube.com/c/MichaelRoseDesign"
-  twitter          : "photoganish"
+  # youtube          : "https://www.youtube.com/c/visualkrafts" # "https://youtube.com/c/MichaelRoseDesign"
+  # twitter          : "photoganish"
   stackoverflow    : "4982581/anish" # "123456/username" (the last part of your profile url, e.g. http://stackoverflow.com/users/123456/username)
   uri              :
   bitbucket        :
