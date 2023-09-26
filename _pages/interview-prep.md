@@ -27,6 +27,6 @@ Roles I can help you prepare for:
  - Data Analyst / Engineer
 
 I also offer [subscriptions](/coding-help-subscription/).
-My experiences and reviews are [here](https://www.codementor.io/anish749/reviews)
+My experiences and reviews are [here](https://mentorcruise.com/mentor/anishchakraborty/)
 
 Contact me [here](/contact)
